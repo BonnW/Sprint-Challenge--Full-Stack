@@ -12,12 +12,20 @@ server.use(cors());
 server.use(body-parser.json());
 
 
+server.get('/api/budgets', function(req, res) {
+  res.status(200).json({ running: 'yes' });
+});
+
+server.post('/api/budgets', function(req, res) {
+  
+})
+
 
 // connect to the server
 
 mongoose.Promise = global.Promise;
 const connect = mongoose.connect(
-  'mongodb://localhost/users',
+  'mongodb://localhost/budgets',
   { useMongoClient: true }
 );
 

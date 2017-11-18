@@ -1,5 +1,5 @@
 1: What is the difference between Node.js and Express.js
-
+  Nodejs is a server framework
 2: What are the core features of Express.js
 
 3: What is Postman and what is it used for?
